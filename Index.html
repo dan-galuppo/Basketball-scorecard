@@ -5,45 +5,33 @@
 		<meta charset="UTF-8">
 		<title>Exercise Basketball scorecard</title>
         <link rel="stylesheet" href="styles.css">
+		<script src="script.js" defer></script>
     </head>
     <body>
         
-        <div class="hero">
-            <h1>Visita Corsico</h1>
-            <h2>Goditi la cultura e la storia di questa città</h2>
-        </div>
-        
-        <div class="attivita">
-            <h3>Le tre attività principali da fare a Corsico</h3>
-		<div class="wrapper_attivita">
-
-		<div class="box_attivita">
-			<img src="images/parco.jpg">
-			<h4>Fai una passeggiata nella natura</h4>
-			Cammina intorno al laghetto, porta a spasso il cane o a giocare i tuoi bimbi
-		</div>
-
-		<div class="box_attivita">
-			<img src="images/chiesa.jpg">
-			<h4>Dedica la tua domenica al Signore</h4>
-			Rinnova la fede, ringrazia per i doni ricevuti e chiedi guida per la settimana
-		</div>
-		<div class="box_attivita">
-			<img src="images/sport.jpg">
-			<h4>Tieni in forma con tante attività a scelta</h4>
-			Calcio, piscina, arrampicata, pallavolo, karate, ginnastica artistica e molto altro
-		</div>
-		</div>
-        </div>
-
-	<div class="guida">
-		<img id="Me" src="images/Marco Coccia.jpg">
-		<div class="guida_text">
-			<h3>La tua guida</h3>
-			<p>"Vivo a Corsico da oltre 20 anni, quindi posso mostrarti i luoghi migliori e i suoi segreti."</p>
-			<h4>Marco Coccia</h4>		
-		</div>
-        </div>
-
+        <mainContainer>
+            <h1>BASKETBALL SCORECARD</h1>
+            <scoreContainer>
+				<teamContainer>
+					<h2>HOME</h2>
+					<score id="home-score">10</score>
+					<buttonWrapper>
+						<button class="score-btn" id="h-1">+1</button>
+						<button class="score-btn" id="h-2">+2</button>
+						<button class="score-btn" id="h-3">+3</button>
+					</buttonWrapper>
+				</teamContainer>
+				<teamContainer>
+					<h2>GUEST</h2>
+					<score id="guest-score">10</score>
+					<buttonWrapper>
+						<button class="score-btn" id="g-1">+1</button>
+						<button class="score-btn" id="g-2">+2</button>
+						<button class="score-btn" id="g-3">+3</button>
+					</buttonWrapper>
+				</teamContainer>
+			</scoreContainer>
+				<button class="reset-btn" id="reset-btn">RESET ALL</button>
+		</mainContainer>
     </body>
 </html>
